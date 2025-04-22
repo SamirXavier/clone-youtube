@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style_video.css">
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/bfe4b043/img/logos/favicon.ico"
+        type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        iframe.video-main {
+            width: 100%;
+            height: 720px;
+            border-radius: 12px;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 24px;
+            padding: 24px;
+        }
+
+        .main {
+            flex: 3;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 24px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .search-bar input {
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-radius: 24px 0 0 24px;
+            width: 300px;
+        }
+
+        .search-bar button {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            border-radius: 0 24px 24px 0;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+        }
+
+        .menu-icons img {
+            width: 24px;
+            margin-left: 16px;
+        }
+
+        .categories {
+            overflow-x: auto;
+            padding: 12px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .category-section {
+            display: flex;
+            gap: 12px;
+        }
+
+        .category {
+            background: #f1f1f1;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+
+        .category.active {
+            background: #000;
+            color: white;
+        }
+
+        .canal {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .img-canal img {
+            border-radius: 50%;
+        }
+
+        #inscrever {
+            background: #cc0000;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .sinais,
+        .compartilhar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+        }
+
+        .side-group {
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        .second-video img {
+            width: 160px;
+            height: 90px;
+            border-radius: 8px;
+        }
+
+        .text-youtube {
+            margin-left: 12px;
+        }
+
+        .text-youtube h4 {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .text-youtube h5,
+        .text-youtube p {
+            margin: 4px 0;
+            font-size: 12px;
+            color: #606060;
+        }
+
+        #comentarios {
+            width: 100%;
+            height: 120px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 14px;
+            resize: none;
+        }
+
+        #description {
+            font-size: 14px;
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+
+        .link {
+            color: #065fd4;
+            cursor: pointer;
+        }
+
+        .youtube-logo {
+            width: 100px;
+        }
+
+        /* NOVO CSS ADICIONADO */
+        .search-bar button img {
+            width: 16px;
+            height: 16px;
+            object-fit: contain;
+        }
+
+        .search-bar, form button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 900px) {
+            .main-content {
+                flex-direction: column;
+            }
+        
+            .main {
+                width: 100%;
+            }
+        
+            .sidebar {
+                width: 100%;
+            }
+        
+            .second-video img {
+                width: 100%;
+                height: auto;
+            }
+        
+            .side-group {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .text-youtube {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html">
+            <img src="image/logo.png" alt="Youtube logo" class="youtube-logo">
+        </a>
+
+        <form class="search-bar">
+            <input type="search" class="search-input" placeholder="search" aria-label="search">
+            <button type="submit" class="search-bar">
+                <img class="youtube-logo" src="image/magnify.png">
+            </button>
+        </form>
+
+        <div class="menu-icons">
+            <a href="#">
+                <img src="image/video-plus.png" alt="Upload Video">
+            </a>
+
+            <a href="#">
+                <img src="image/apps.png" alt="apps">
+            </a>
+
+            <a href="#">
+                <img src="image/bell.png" alt="notifications">
+            </a>
+
+            <a href="#">
+                <img class="menu-channel-icon" src="https://owcdn.net/img/64169733ae9f1.png" alt="aspas imagem">
+            </a>
+
+        </div>
+    </header>
+
+    <div class="categories">
+        <section class="category-section">
+            <button class="category active">tudo</button>
+            <button class="category">Games</button>
+            <button class="category">Programação</button>
+            <button class="category">Musica</button>
+            <button class="category">documentarios</button>
+            <button class="category">filmes</button>
+            <button class="category">livestream</button>
+            <button class="category">desenhos</button>
+            <button class="category">vlogs</button>
+            <button class="category">outros</button>
+
+        </section>
+    </div>
+
+
+    <section class="main-content">
+        <div class="grid">
+            <main class="main">
+                <iframe class="video-main" width="1317" height="741" src="https://www.youtube.com/embed/lx0eir2xF5E"
+                    title="EU SOU DEV JR 🎵" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h2>EU SOU DEV JR 🎵</h2>
+
+                <div class="canal">
+                    <div class="img-canal">
+                        <img src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="">
+                    </div>
+
+                    <div class="nome-canal">
+                        <h3>CriaScript</h3>
+                        <p>91,4 mil inscritos</p>
+                    </div>
+
+                    <button id="inscrever"> <i class="fa fa-bell"></i>Inscreva-se</button>
+
+                    <div class="sinais">
+                        <i class="fa fa-thumbs-up"></i>
+                        <p style="margin: 0;">6,5mil |</p>
+                        <i class="fa fa-thumbs-down"></i>
+                        <p style="margin: 0;">160 </p>
+                    </div>
+
+                    <div class="compartilhar">
+                        <i class="fa fa-share"></i>
+                        <p>Compartilhar</p>
+                    </div>
+
+                </div>
+
+
+                <p id="description">
+                    <b>113.260 visualizações 25 de abr. de 2023</b> <span class="link"> #dev #musica #programação</span>
+                    <br>
+                    Música feita especialmente para você, dev jr. que tanto sofre nesse mercado brasileiro. Tenho
+                    certeza que você vai se identificar com pelo menos uma coisa, bater no peito e falar: EU SOU DEV JR!
+                    Comente aí pra engajar! <br>
+                    Link <br> <span class="link">https://www.youtube.com/@criascript?sub_confirmation=1</span> <br>
+                    Edição / Letra: <br>
+                    euzim<br>
+                </p>
+
+
+                <textarea name="comentarios" id="comentarios" placeholder="Adicione um comentário..." cols="90"
+                    rows="30"></textarea>
+
+            </main>
+        </div>
+
+        <aside class="sidebar">
+            <div class="side-group">
+                <div class="second-video">
+                    <a href="https://youtu.be/jK2k1P56Cno?si=fnqDhHYZa8yvIMBe"><img
+                            src="https://i.ytimg.com/vi/jK2k1P56Cno/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBUOS7jJ8dJHNNL_D_UCB92ChPuBw"
+                            alt=""></a>
+                </div>
+                <div class="text-youtube">
+                    <h4>Poesia Acústica #6 - Era Uma Vez - <br> Mc Cabelinho, Orochi, Bob, Maquiny, Azzy, Filipe Ret,
+                        Dudu, Xamã</h4>
+                    <h5>PineappleStormTV</h5>
+                    <p>870 mi de visualizações há 6 anos</p>
+                </div>
+            </div>
+
+            <div class="side-group">
+                <div class="second-video">
+                    <a href="https://youtu.be/TQ5DUv_ZwRg?si=Ei4ekYsvEpIa9K2z"><img src="image/1kilo.png" alt=""></a>
+                </div>
+                <div class="text-youtube">
+                    <h4>Acústico 1Kilo - Deixe-me Ir (Baviera, Knust e Pablo Martins)</h4>
+                    <h5>1Kilo Oficial</h5>
+                    <p>278 mi de visualizações há 8 anos</p>
+                </div>
+            </div>
+
+            <div class="side-group">
+                <div class="second-video">
+                    <a href="https://youtu.be/crXc88qoGoo?si=xTBYPLzBMUjle5Df"><img src="image/nerd.png" alt=""></a>
+                </div>
+                <div class="text-youtube">
+                    <h4>Todos os Personagens de Vingadores: DOOMSDAY <br>foram anunciados</h4>
+                    <h5>Ei Nerd</h5>
+                    <p>1,2 mi de visualizações há 12 dias</p>
+                </div>
+            </div>
+
+            <div class="side-group">
+                <div class="second-video">
+                    <a href="https://youtu.be/X8jD3F9PI7Q?si=uYEhC73YTV9D_OnN"><img src="image/image copy 3.png"
+                            alt=""></a>
+                </div>
+                <div class="text-youtube">
+                    <h4>Henrique e Juliano - NA HORA DA RAIVA - <br> DVD Novas Histórias - Ao vivo em Recife</h4>
+                    <h5>Henrique e Juliano</h5>
+                    <p>546 mi de visualizações há 9 anos</p>
+                </div>
+            </div>
+        </aside>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

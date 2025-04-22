@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,48 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/bfe4b043/img/logos/favicon.ico"
+        type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 
 </head>
+
 <body>
-    <header>
-        <a href="#">
-            <img src="logo.png" alt="Youtube logo" class="youtube-logo">
+    <header class="header">
+        <a href="index.html">
+            <img src="image/logo.png" alt="Youtube logo" class="youtube-logo">
         </a>
 
         <form class="search-bar">
             <input type="search" class="search-input" placeholder="search" aria-label="search">
             <button type="submit" class="search-bar">
-                <img src="magnify.svg">
+                <img src="image/magnify.png">
             </button>
         </form>
 
         <div class="menu-icons">
             <a href="#">
-                <img src="video-plus.png" alt="Upload Video">
+                <img src="image/video-plus.png" alt="Upload Video">
             </a>
 
             <a href="#">
-                <img src="apps.png" alt="apps">
+                <img src="image/apps.png" alt="apps">
             </a>
 
             <a href="#">
-                <img src="bell.png" alt="notifications">
+                <img src="image/bell.png" alt="notifications">
             </a>
 
             <a href="#">
-                <img src="https://owcdn.net/img/64169733ae9f1.png" alt="aspas imagem">
+                <img class="menu-channel-icon" src="https://owcdn.net/img/64169733ae9f1.png" alt="aspas imagem">
             </a>
 
         </div>
@@ -45,7 +57,536 @@
 
     <div class="categories">
         <section class="category-section">
-            <button class="category active"></button>
+            <button class="category active">tudo</button>
+            <button class="category">Games</button>
+            <button class="category">Programação</button>
+            <button class="category">Musica</button>
+            <button class="category">documentarios</button>
+            <button class="category">filmes</button>
+            <button class="category">livestream</button>
+            <button class="category">desenhos</button>
+            <button class="category">vlogs</button>
+            <button class="category">outros</button>
+
+        </section>
+    </div>
+
+    <div class="videos">
+        <section class="video-section">
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="video-container">
+                <a href="video.html" class="thumbnail" data-duration="1:13">
+                    <img class="thumbnail-image"
+                        src="https://i.ytimg.com/vi/lx0eir2xF5E/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCQpEOhlk-gSJoVWu0CI7QMaJ5-Rg"
+                        alt="foto do personagem de mr.robot">
+                </a>
+                <div class="video-bottom-section">
+                    <a href="#">
+                        <img class="channel-icon"
+                            src="https://yt3.ggpht.com/gt0spAPbTgbddIKndgiPeibDyDi1ARToxaK2IQukob0ImLtwn2aD_KmA0CHCvDq8J6RDYHiOTzM=s48-c-k-c0x00ffffff-no-rj"
+                            alt="foto do canal ">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="video-title">EU SOU DEV JR 🎵</a>
+                        <a href="#" class="video-channel-name">CriaScript</a>
+                        <div class="video-metadata">
+                            <span>113mil views</span>
+                            •
+                            <span>25/04/2023</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </div>
 </body>
